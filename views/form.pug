@@ -1,0 +1,12 @@
+doctype html 
+html 
+  head 
+    title indi
+  body 
+    form(action='/api' method='post') 
+      input(type='text' placeholder='user name here' name='city')
+      br
+      button  submit 
+    //- use css as string 
+    -const mystyle='color:red; font-size:100px; background-color:cyan;'
+    h1(style=mystyle) #{message}
