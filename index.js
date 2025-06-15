@@ -16,7 +16,7 @@ app.use('/api', router);
 // app.get('/', (req, res) => {
 //    res.render('index', { message: 'Hello World' });
 // });
-// static file route should be used after default route only
+// static file route should be used after default pug template route only
 app.get('/', (req, res) => {
    res.sendFile(path.join(__dirname,'public/home.html'))
 });
